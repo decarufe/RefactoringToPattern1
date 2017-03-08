@@ -17,18 +17,9 @@ namespace Final
             return calc;
         }
 
-        private readonly IDictionary<string, Type> _operationMap = new Dictionary<string, Type>
+        public double Execute(double a, IOperation operation, double b)
         {
-            { "+", typeof(AddOperation) },
-            { "-", typeof(SubstractOperation) },
-            { "/", typeof(DivideOperation) },
-            { "*", typeof(MultiplyOperation) }
-        };
-
-        public double Execute(double a, string operation, double b)
-        {
-            var instance = (IOperation)Activator.CreateInstance(_operationMap[operation]);
-            var result = instance.Execute(a, b);
+            var result = operation.Execute(a, b);
             return result;
         }
     }

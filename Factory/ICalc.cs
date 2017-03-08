@@ -2,6 +2,6 @@
 {
     public interface ICalc
     {
-        double Execute(double a, string operation, double b);
+        double Execute(double a, IOperation operation, double b);
     }
 }
