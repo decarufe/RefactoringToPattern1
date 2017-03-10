@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Factory
+﻿namespace Factory
 {
     public class Calc : ICalc
     {

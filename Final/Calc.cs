@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Final
+﻿namespace Final
 {
     public class Calc : ICalc
     {
