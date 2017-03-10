@@ -6,7 +6,7 @@ namespace Factory
     {
         static void Main()
         {
-            Console.WriteLine("Refactor to factory\n");
+            Console.WriteLine("Decorator\n");
             // TODO - Replace with factory
             ILogger logger = new Logger();
             var calc = new LoggerDecorator(new Calc(), logger);

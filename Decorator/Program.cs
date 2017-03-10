@@ -6,7 +6,7 @@ namespace Decorator
     {
         static void Main()
         {
-            Console.WriteLine("Refactor to Decorator\n");
+            Console.WriteLine("Strategy\n");
             var calc = new Calc();
             Console.WriteLine(calc.Execute(2, new AddOperation(), 3));
             Console.WriteLine(calc.Execute(2, new SubstractOperation(), 3));

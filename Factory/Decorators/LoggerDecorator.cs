@@ -11,10 +11,6 @@ namespace Factory
             _logger = logger;
         }
 
-        public LoggerDecorator(ICalc calc) : base(calc)
-        {
-        }
-
         protected override void Executing(double a, IOperation operation, double b)
         {
             _logger.Log($"Executing {a} {operation} {b}");
