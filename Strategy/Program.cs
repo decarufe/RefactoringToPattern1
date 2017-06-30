@@ -8,10 +8,10 @@ namespace Strategy
         {
             Console.WriteLine("Initial\n");
             var calc = new Calc();
-            Console.WriteLine(calc.Execute(2, "+", 3));
-            Console.WriteLine(calc.Execute(2, "-", 3));
-            Console.WriteLine(calc.Execute(2, "/", 3));
-            Console.WriteLine(calc.Execute(2, "*", 3));
+            Console.WriteLine("6 + 2 = {0}", calc.Execute(6, "+", 2));
+            Console.WriteLine("6 - 2 = {0}", calc.Execute(6, "-", 2));
+            Console.WriteLine("6 / 2 = {0}", calc.Execute(6, "/", 2));
+            Console.WriteLine("6 * 2 = {0}", calc.Execute(6, "*", 2));
         }
     }
 }

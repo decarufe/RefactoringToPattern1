@@ -10,10 +10,10 @@ namespace Factory
             // TODO - Replace with factory
             ILogger logger = new Logger();
             var calc = new LoggerDecorator(new Calc(), logger);
-            Console.WriteLine(calc.Execute(2, new AddOperation(), 3));
-            Console.WriteLine(calc.Execute(2, new SubstractOperation(), 3));
-            Console.WriteLine(calc.Execute(2, new DivideOperation(), 3));
-            Console.WriteLine(calc.Execute(2, new MultiplyOperation(), 3));
+            Console.WriteLine("6 + 2 = {0}", calc.Execute(6, new AddOperation(), 2));
+            Console.WriteLine("6 - 2 = {0}", calc.Execute(6, new SubstractOperation(), 2));
+            Console.WriteLine("6 / 2 = {0}", calc.Execute(6, new DivideOperation(), 2));
+            Console.WriteLine("6 * 2 = {0}", calc.Execute(6, new MultiplyOperation(), 2));
         }
     }
 }
