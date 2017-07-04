@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorators\ValidationDecorator.cs" />
     <Compile Include="Logging\Logger.cs" />
     <Compile Include="Strategy\AddOperation.cs" />
     <Compile Include="Calc.cs" />

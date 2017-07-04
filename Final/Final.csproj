@@ -46,6 +46,7 @@
     <Compile Include="Calc.cs" />
     <Compile Include="Decorators\CalcDecorator.cs" />
     <Compile Include="Decorators\LoggerDecorator.cs" />
+    <Compile Include="Decorators\ValidationDecorator.cs" />
     <Compile Include="ICalc.cs" />
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />

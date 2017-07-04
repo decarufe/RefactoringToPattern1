@@ -10,6 +10,7 @@
         {
             ICalc calc = new Calc();
             ILogger logger = new Logger();
+            calc = new ValidationDecorator(calc);
             calc = new LoggerDecorator(calc, logger);
             return calc;
         }
