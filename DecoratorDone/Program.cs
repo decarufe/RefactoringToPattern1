@@ -1,12 +1,15 @@
 ﻿using System;
+using DecoratorDone.Decorators;
+using DecoratorDone.Logging;
+using DecoratorDone.Strategy;
 
-namespace Factory
+namespace DecoratorDone
 {
     static class Program
     {
         static void Main()
         {
-            Console.WriteLine("Before Factory\n");
+            Console.WriteLine("Decorator Done\n");
             // TODO - Replace with factory
             ILogger logger = new Logger();
             var calc = new LoggerDecorator(new Calc(), logger);

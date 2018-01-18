@@ -1,15 +1,16 @@
 ﻿using System;
+using FactoryDone.Decorators;
+using FactoryDone.Logging;
+using FactoryDone.Strategy;
 
-namespace Factory
+namespace FactoryDone
 {
     static class Program
     {
         static void Main()
         {
-            Console.WriteLine("Before Factory\n");
-            // TODO - Replace with factory
-            ILogger logger = new Logger();
-            var calc = new LoggerDecorator(new Calc(), logger);
+            Console.WriteLine("Factory Done\n");
+            var calc = Calc.Create();
             Console.WriteLine("6 + 2 = {0}", calc.Execute(6, new AddOperation(), 2));
             Console.WriteLine("6 - 2 = {0}", calc.Execute(6, new SubstractOperation(), 2));
             Console.WriteLine("6 / 2 = {0}", calc.Execute(6, new DivideOperation(), 2));

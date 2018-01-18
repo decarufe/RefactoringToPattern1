@@ -1,15 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using StrategyDone.Strategy;
 
-namespace Factory
+namespace StrategyDone
 {
-    static class Program
+    class Program
     {
         static void Main()
         {
-            Console.WriteLine("Before Factory\n");
-            // TODO - Replace with factory
-            ILogger logger = new Logger();
-            var calc = new LoggerDecorator(new Calc(), logger);
+            Console.WriteLine("Strategy Done\n");
+            var calc = new Calc();
             Console.WriteLine("6 + 2 = {0}", calc.Execute(6, new AddOperation(), 2));
             Console.WriteLine("6 - 2 = {0}", calc.Execute(6, new SubstractOperation(), 2));
             Console.WriteLine("6 / 2 = {0}", calc.Execute(6, new DivideOperation(), 2));
